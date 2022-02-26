@@ -20,6 +20,13 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .webpackConfig(require('./webpack.config'));
 
+mix.webpackConfig({
+    devServer: {
+        host: '0.0.0.0',
+        port: 8080,
+    },
+});
+
 if (mix.inProduction()) {
     mix.version();
 }
