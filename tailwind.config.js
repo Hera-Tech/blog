@@ -9,9 +9,19 @@ module.exports = {
     ],
 
     theme: {
+        borderRadius: {
+            'full': '200px',
+        },
         extend: {
+            borderRadius: {
+                '4xl': '48px',
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            },
+            width: {
+                '112': '28rem',
+                '120': '40rem',
             },
         },
     },
